@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom'
 import './App.css'
 import { Contato } from './component/Contato'
@@ -7,15 +8,15 @@ import { PageNotFound } from './component/PageNotFound'
 import { Profile } from './component/Profile'
 
 function App() {
-
+  const [userName, setUserName] = useState("");
   return (
     <div className="App">
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home userName={userName} />} />
+          <Route path='/profile' element={<Profile userName={userName} />} />
           <Route path='/contato' element={<Contato />} />
-          <Route path='/profile' element={<Profile />} />
           <Route path='/*' element={<PageNotFound />} />
         </Routes>
       </Router>
