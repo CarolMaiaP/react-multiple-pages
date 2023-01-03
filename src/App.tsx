@@ -1,7 +1,8 @@
-import { BrowserRouter as Router, Routes, Route, Link  } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom'
 import './App.css'
 import { Contato } from './component/Contato'
 import { Home } from './component/Home'
+import { Navbar } from './component/Navbar'
 import { PageNotFound } from './component/PageNotFound'
 
 function App() {
@@ -9,8 +10,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Link to="/">Home</Link>
-        <Link to="/contato">Contato</Link>
+        <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/contato' element={<Contato />} />
