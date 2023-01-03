@@ -8,7 +8,7 @@ import { PageNotFound } from './component/PageNotFound'
 import { Profile } from './component/Profile'
 
 function App() {
-  const [userName, setUserName] = useState("");
+  const [userName, setUserName] = useState("CarolMaia");
   return (
     <div className="App">
       <Router>

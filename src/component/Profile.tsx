@@ -4,6 +4,6 @@ interface profileProps{
 
 export function Profile({userName}: profileProps){
   return(
-    <h1>Profile</h1>
+    <h1>Profile: the user is: {userName}</h1>
   )
 }

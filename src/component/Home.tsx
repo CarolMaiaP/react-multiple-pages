@@ -4,6 +4,6 @@ interface homeProps{
 
 export function Home({userName}: homeProps){
   return(
-    <h1>This is home page</h1>
+    <h1>This is the home page and the user is {userName}</h1>
   )
 }
