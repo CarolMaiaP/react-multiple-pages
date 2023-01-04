@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route  } from 'react-router-dom'
-import './App.css'
+import './styles/App.scss'
 import { Contato } from './component/Contato'
 import { Home } from './component/Home'
 import { Navbar } from './component/Navbar'
