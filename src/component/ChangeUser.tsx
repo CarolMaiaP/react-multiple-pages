@@ -1,5 +1,6 @@
 import { useContext, useState } from "react"
 import { AppContext } from "../App"
+import '../styles/ChangeUser.scss'
 
 export function ChangeUser(){
   const { setUserName } = useContext(AppContext)
@@ -11,7 +12,7 @@ export function ChangeUser(){
 
   return(
     <div className="changeUser">
-      <input type="text" onChange={(event) => setChangeUser(event.target.value)} />
+      <input type="text" placeholder="type a user name" onChange={(event) => setChangeUser(event.target.value)} />
       <button onClick={handleChangeUser}>Change</button>
     </div>
   )
