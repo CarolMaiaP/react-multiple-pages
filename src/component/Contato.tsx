@@ -1,5 +1,9 @@
+import '../styles/Contato.scss'
+
 export function Contato(){
   return(
-    <h1>This is Contact Page</h1>
+    <div className="contato">
+      <h1>This is Contact Page</h1>
+    </div>
   )
 }
